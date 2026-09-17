@@ -24,7 +24,7 @@ export default function App() {
           <Work />
         </Section>
 
-        <Section id="experience" eyebrow="Experience" title="Eight years, four teams">
+        <Section id="experience" eyebrow="Experience" title="Nine years, four teams">
           <Experience />
         </Section>
 

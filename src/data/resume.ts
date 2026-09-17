@@ -32,7 +32,7 @@ export const profile = {
 export const intro = {
   heading: 'Why I build what I build',
   paragraphs: [
-    `I'm a product-focused Senior iOS Engineer with 8+ years spent shipping polished consumer applications to
+    `I'm a product-focused Senior iOS Engineer with 9+ years spent shipping polished consumer applications to
      very large user bases — Zomato, OYO, and for the last six years the Deutsche Telekom streaming ecosystem.
      My work sits where technical craftsmanship meets product judgement: I care about the frame that drops, the
      accessibility label that's missing, and the release that goes out clean.`,
@@ -72,7 +72,7 @@ export const highlights: Highlight[] = [
       'Engineered and optimised the AppleTV ecosystem across several international markets, owning Player and Home.',
   },
   {
-    metric: '8+ yrs',
+    metric: '9+ yrs',
     label: 'Consumer iOS',
     detail:
       'Shipping to massive user bases at Zomato, OYO and Deutsche Telekom — Swift, SwiftUI and Objective-C in production.',

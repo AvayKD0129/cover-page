@@ -30,7 +30,7 @@ export default function Hero() {
           <p className="mt-1.5 font-mono text-sm text-mist-500">{profile.tagline}</p>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-mist-300">
-            Eight years building high-performance consumer apps for massive user bases — and lately, the
+            Nine years building high-performance consumer apps for massive user bases — and lately, the
             agentic AI tooling that makes building them faster.
           </p>
 
