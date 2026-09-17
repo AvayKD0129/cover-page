@@ -33,7 +33,7 @@ export const intro = {
   heading: 'Why I build what I build',
   paragraphs: [
     `I'm a product-focused Senior iOS Engineer with 8+ years spent shipping polished consumer applications to
-     very large user bases — Zomato, OYO, and for the last four years the Deutsche Telekom streaming ecosystem.
+     very large user bases — Zomato, OYO, and for the last six years the Deutsche Telekom streaming ecosystem.
      My work sits where technical craftsmanship meets product judgement: I care about the frame that drops, the
      accessibility label that's missing, and the release that goes out clean.`,
 
@@ -157,7 +157,7 @@ export const roles: Role[] = [
     title: 'Software Engineer',
     company: 'Deutsche Telekom Digital Labs',
     location: 'Gurugram',
-    start: 'Apr 2021',
+    start: 'Apr 2020',
     end: 'Oct 2022',
     bullets: [
       { text: 'Implemented user analytics services for MoEngage, Google Analytics, and in-house systems.' },

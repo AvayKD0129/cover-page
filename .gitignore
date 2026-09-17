@@ -8,3 +8,6 @@ dist
 # public/ is the single source of truth — update the files there.
 /Avay_photo.jpeg
 /Avay_KumarDas_Resume.pdf
+
+# Targeted job-application documents — this repo is public.
+Cover_Letter_*.md
