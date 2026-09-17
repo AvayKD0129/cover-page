@@ -1,0 +1,10 @@
+node_modules
+dist
+.DS_Store
+*.local
+.vite
+
+# Source drops, byte-identical to the served copies in public/.
+# public/ is the single source of truth — update the files there.
+/Avay_photo.jpeg
+/Avay_KumarDas_Resume.pdf

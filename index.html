@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Avay Kumar Das — Senior iOS Engineer</title>
+    <meta
+      name="description"
+      content="Senior iOS Engineer with 8+ years building polished consumer apps in SwiftUI, Swift and Objective-C for massive user bases."
+    />
+    <link rel="canonical" href="https://avaykumar.dev/" />
+    <meta name="theme-color" content="#070d0b" />
+
+    <script>
+      // Resolve the theme before first paint so the page never flashes the wrong palette.
+      // Dark is the default; only a visitor's own saved choice moves it to light.
+      (function () {
+        var theme = 'dark'
+        try {
+          if (localStorage.getItem('theme') === 'light') theme = 'light'
+        } catch (e) {}
+        document.documentElement.dataset.theme = theme
+      })()
+    </script>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://avaykumar.dev/" />
+    <meta property="og:title" content="Avay Kumar Das — Senior iOS Engineer" />
+    <meta
+      property="og:description"
+      content="8+ years shipping consumer iOS at Zomato, OYO and Deutsche Telekom. SwiftUI, Swift, Objective-C — and the AI tooling around them."
+    />
+    <meta property="og:image" content="https://avaykumar.dev/avay.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/avay.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
