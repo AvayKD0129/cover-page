@@ -212,18 +212,114 @@ export const roles: Role[] = [
 ]
 
 /**
- * Shipped work. Placeholder until the App Store links and screenshots are added —
- * drop entries in here and the section renders itself.
+ * Shipped work. `icon` is a path stem — <picture> serves .webp and falls back to .jpg.
+ * Icons come from the App Store; add more with scripts/fetch-icons.py.
+ *
+ * A `featured` entry renders full width and shows its `markets` as a tile strip, which is
+ * how the one-codebase-many-NatCos work is represented rather than as near-duplicate cards.
  */
-export type App = {
-  name: string
-  role: string
-  blurb: string
-  image?: string
-  href?: string
+export type Market = {
+  code: string
+  country: string
+  app: string
+  publisher: string
+  icon: string
+  href: string
 }
 
-export const apps: App[] = []
+export type App = {
+  name: string
+  publisher: string
+  platform: string
+  category: string
+  blurb: string
+  icon?: string
+  href?: string
+  featured?: boolean
+  markets?: Market[]
+}
+
+export const apps: App[] = [
+  {
+    name: 'MagentaTV',
+    publisher: 'Deutsche Telekom Digital Labs',
+    platform: 'tvOS · iOS',
+    category: 'OTT streaming',
+    featured: true,
+    blurb:
+      'One shared codebase shipped as six market apps, on Apple TV and iOS. I owned the Player and Home modules on tvOS and worked across content detail, search, settings and the analytics layer, plus the player analytics that feed commission settlement. Each market carries its own branding, catalogue and content rights on top of the same core — Hungary and Croatia ship under different names entirely.',
+    markets: [
+      {
+        code: 'PL',
+        country: 'Poland',
+        app: 'MagentaTV - Polska',
+        publisher: 'T-Mobile Polska',
+        icon: '/apps/natco-pl',
+        href: 'https://apps.apple.com/pl/app/magentatv-polska/id1599075496',
+      },
+      {
+        code: 'AT',
+        country: 'Austria',
+        app: 'Magenta TV',
+        publisher: 'T-Mobile Austria',
+        icon: '/apps/natco-at',
+        href: 'https://apps.apple.com/at/app/magenta-tv/id1574876782',
+      },
+      {
+        code: 'HU',
+        country: 'Hungary',
+        app: 'Telekom TV GO',
+        publisher: 'Magyar Telekom',
+        icon: '/apps/natco-hu',
+        href: 'https://apps.apple.com/hu/app/telekom-tv-go/id1498611604',
+      },
+      {
+        code: 'HR',
+        country: 'Croatia',
+        app: 'MAXtv',
+        publisher: 'Hrvatski Telekom',
+        icon: '/apps/natco-hr',
+        href: 'https://apps.apple.com/hr/app/maxtv/id6443560482',
+      },
+      {
+        code: 'MK',
+        country: 'North Macedonia',
+        app: 'MagentaTV GO',
+        publisher: 'Makedonski Telekom',
+        icon: '/apps/natco-mk',
+        href: 'https://apps.apple.com/mk/app/magentatv-go/id6449970572',
+      },
+      {
+        code: 'ME',
+        country: 'Montenegro',
+        app: 'MagentaTV ME',
+        publisher: 'Crnogorski Telekom',
+        icon: '/apps/natco-me',
+        href: 'https://apps.apple.com/me/app/magentatv-me/id6446983056',
+      },
+    ],
+  },
+  {
+    name: 'OYO',
+    publisher: 'Oravel Stays',
+    platform: 'iOS',
+    category: 'Hotel booking',
+    blurb:
+      'Added right-to-left language support for international markets, built search, home and hotel detail screens, and led a rework of the login and signup flow to ease onboarding for international users.',
+    icon: '/apps/oyo',
+    href: 'https://apps.apple.com/in/app/oyo-hotel-booking-app-deals/id988141624',
+  },
+  {
+    name: 'Zomato',
+    publisher: 'Zomato Media',
+    platform: 'iOS',
+    category: 'Food delivery',
+    blurb:
+      'Rewrote the layout system from frames to AutoLayout across the app, then shipped UI revamps of the highest-traffic screens — restaurant pages, user profile, user feed and home feed.',
+    icon: '/apps/zomato',
+    href: 'https://apps.apple.com/in/app/zomato-food-delivery-dining/id434613896',
+  },
+]
 
 export const education = {
   degree: 'Bachelor of Technology',
